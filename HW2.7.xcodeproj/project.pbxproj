@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		C99A1EDE2509372B004A647A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A1EDD2509372B004A647A /* AppDelegate.swift */; };
 		C99A1EE02509372B004A647A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A1EDF2509372B004A647A /* SceneDelegate.swift */; };
-		C99A1EE22509372B004A647A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A1EE12509372B004A647A /* ViewController.swift */; };
 		C99A1EE52509372B004A647A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99A1EE32509372B004A647A /* Main.storyboard */; };
 		C99A1EE72509372D004A647A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99A1EE62509372D004A647A /* Assets.xcassets */; };
 		C99A1EEA2509372D004A647A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99A1EE82509372D004A647A /* LaunchScreen.storyboard */; };
+		C99A1EF725093B14004A647A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A1EF625093B14004A647A /* Person.swift */; };
+		C99A1EF925093FD8004A647A /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A1EF825093FD8004A647A /* SimpleTableViewController.swift */; };
+		C99A1EFB2509402A004A647A /* ExtendedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A1EFA2509402A004A647A /* ExtendedTableViewController.swift */; };
+		C99A1EFF25098460004A647A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A1EFE25098460004A647A /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C99A1EDA2509372B004A647A /* HW2.7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99A1EDD2509372B004A647A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C99A1EDF2509372B004A647A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C99A1EE12509372B004A647A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C99A1EE42509372B004A647A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C99A1EE62509372D004A647A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99A1EE92509372D004A647A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C99A1EEB2509372D004A647A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99A1EF625093B14004A647A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C99A1EF825093FD8004A647A /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
+		C99A1EFA2509402A004A647A /* ExtendedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedTableViewController.swift; sourceTree = "<group>"; };
+		C99A1EFE25098460004A647A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		C99A1EDC2509372B004A647A /* HW2.7 */ = {
 			isa = PBXGroup;
 			children = (
-				C99A1EDD2509372B004A647A /* AppDelegate.swift */,
-				C99A1EDF2509372B004A647A /* SceneDelegate.swift */,
-				C99A1EE12509372B004A647A /* ViewController.swift */,
-				C99A1EE32509372B004A647A /* Main.storyboard */,
-				C99A1EE62509372D004A647A /* Assets.xcassets */,
-				C99A1EE82509372D004A647A /* LaunchScreen.storyboard */,
-				C99A1EEB2509372D004A647A /* Info.plist */,
+				C99A1EF5250937A1004A647A /* Database */,
+				C99A1EF425093775004A647A /* Other */,
+				C99A1EF325093767004A647A /* Model */,
+				C99A1EF225093759004A647A /* VewControllers */,
+				C99A1EF12509374C004A647A /* Storyboards */,
 			);
 			path = HW2.7;
+			sourceTree = "<group>";
+		};
+		C99A1EF12509374C004A647A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C99A1EE32509372B004A647A /* Main.storyboard */,
+				C99A1EE82509372D004A647A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C99A1EF225093759004A647A /* VewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C99A1EF825093FD8004A647A /* SimpleTableViewController.swift */,
+				C99A1EFA2509402A004A647A /* ExtendedTableViewController.swift */,
+				C99A1EFE25098460004A647A /* DetailsViewController.swift */,
+			);
+			path = VewControllers;
+			sourceTree = "<group>";
+		};
+		C99A1EF325093767004A647A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C99A1EF625093B14004A647A /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C99A1EF425093775004A647A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C99A1EDD2509372B004A647A /* AppDelegate.swift */,
+				C99A1EDF2509372B004A647A /* SceneDelegate.swift */,
+				C99A1EE62509372D004A647A /* Assets.xcassets */,
+				C99A1EEB2509372D004A647A /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C99A1EF5250937A1004A647A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99A1EE22509372B004A647A /* ViewController.swift in Sources */,
 				C99A1EDE2509372B004A647A /* AppDelegate.swift in Sources */,
+				C99A1EFB2509402A004A647A /* ExtendedTableViewController.swift in Sources */,
+				C99A1EF725093B14004A647A /* Person.swift in Sources */,
 				C99A1EE02509372B004A647A /* SceneDelegate.swift in Sources */,
+				C99A1EF925093FD8004A647A /* SimpleTableViewController.swift in Sources */,
+				C99A1EFF25098460004A647A /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDMF346VA4;
-				INFOPLIST_FILE = HW2.7/Info.plist;
+				INFOPLIST_FILE = HW2.7/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.zigura.HW2-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDMF346VA4;
-				INFOPLIST_FILE = HW2.7/Info.plist;
+				INFOPLIST_FILE = HW2.7/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.zigura.HW2-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
